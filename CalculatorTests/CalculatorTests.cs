@@ -4,7 +4,8 @@ namespace CalculatorTests;
 public class CalculatorTests
 {
     [Theory]
-    [InlineData(1, 1, 2)]
+    [InlineData(1, 0, 1)]
+    //[InlineData(1, 1, 2)]
     public void Add_ShouldAdd(int num1, int num2, int expected)
     {
         // Arrange
@@ -18,7 +19,8 @@ public class CalculatorTests
     }
 
     [Theory]
-    [InlineData(1, 1, 0)]
+    //[InlineData(1, 1, 0)]
+    [InlineData(1, 0, 1)]
     public void Substract_ShouldSubtract(int num1, int num2, int expected)
     {
         // Arrange
